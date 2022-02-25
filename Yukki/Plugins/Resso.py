@@ -103,7 +103,7 @@ async def resso_play(_, message: Message):
                     return await message.reply_photo(
                         photo="Utils/resso.jpg",
                         caption=(
-                            "**Usage:**\n /resso [Resso Track Or Playlist Or Album Or Artist Link]\n\n➤ **Playing limit is 20 songs for playlists** [[What is this ?](https://t.me/TechZBots/71)]"
+                            "**Usage:**\n /resso [Resso Track Or Playlist Or Album Or Artist Link]\n\n➤ **Playing limit is 20 songs for playlists** "
                         ),
                         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🔄 Close", callback_data="close_btn"),]]))             
                 (
