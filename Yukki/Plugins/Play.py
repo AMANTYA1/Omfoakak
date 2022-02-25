@@ -41,7 +41,7 @@ loop = asyncio.get_event_loop()
 
 
 @app.on_message(
-    filters.command(["ulay", f"ulay@{BOT_USERNAME}"]) & filters.group
+    filters.command(["dlay", f"dlay@{BOT_USERNAME}"]) & filters.group
 )
 @checker
 @logging
