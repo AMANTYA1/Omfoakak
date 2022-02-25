@@ -32,18 +32,18 @@ async def gen_thumb(thumbnail, title, userid, theme, ctitle):
     Image.alpha_composite(image5, image6).save(f"cache/temp{userid}.png")
     img = Image.open(f"cache/temp{userid}.png")
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype("Utils/umm.ttf", 85)
-    font2 = ImageFont.truetype("Utils/umm.ttf", 60)
+    font = ImageFont.truetype("Utils/finalfont.ttf", 85)
+    font2 = ImageFont.truetype("Utils/finalfont.ttf", 60)
     draw.text(
-        (20, 46),
+        (20, 45),
         f"Playing on: {ctitle[:14]}...",
         fill="white",
         stroke_width=1,
         stroke_fill="white",
-        font=font,
+        font=font2,
     )
     draw.text(
-        (20, 46),
+        (25, 595),
         f"{title[:27]}...",
         fill="white",
         stroke_width=2,
