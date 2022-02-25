@@ -40,7 +40,7 @@ async def gen_thumb(thumbnail, title, userid, theme, ctitle):
         fill="white",
         stroke_width=2,
         stroke_fill="white",
-        font=font,,
+        font=font,
     )
     draw.text(
         (20, 46),
