@@ -50,7 +50,6 @@ async def gen_thumb(thumbnail, title, userid, theme, ctitle):
         stroke_fill="white",
         font=font,
     )
-    )
     img.save(f"cache/final{userid}.png")
     os.remove(f"cache/temp{userid}.png")
     os.remove(f"cache/thumb{userid}.jpg")
