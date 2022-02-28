@@ -149,7 +149,7 @@ async def custom_start_stream(
         to_append = [title, user, duration]
         got_queue.append(to_append)
         final_output = await message.reply_photo(
-            photo=Utils/sticker.png,
+            photo=thumb,
             caption=(
                 f"🎬<b>__Song:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>__Duration:__</b> {duration_min} \n💡<b>__Info:__</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤<b>__Requested by:__ </b>{message.from_user.mention} \n🚧<b>__Queued at:__</b> <b>#{position}!</b>"
             ),
@@ -301,7 +301,7 @@ async def custom_video_stream(
         to_append = [title, user, duration]
         got_queue.append(to_append)
         final_output = await message.reply_photo(
-            photo=Utils/video.png,
+            photo=thumb,
             caption=(
                 f"🎬<b>Video:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>__Duration:__</b> {duration_min} \n💡<b>__Info:__</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤<b>__Requested by:__ </b>{message.from_user.mention} \n🚧<b>__ Video Queued at:__</b> <b>#{position}!</b>"
             ),
