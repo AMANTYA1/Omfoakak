@@ -170,7 +170,7 @@ async def start_video_stream(
         to_append = [title, user, duration]
         got_queue.append(to_append)
         final_output = await CallbackQuery.message.reply_photo(
-            photo=thumb,
+            photo=Utils/sticker.png,
             caption=(
                 f"🎬<b>Video:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>__Duration:__</b> {duration_min} \n💡<b>__Info:__</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤<b>__Requested by:__ </b>{CallbackQuery.from_user.mention} \n🚧<b>__ Video Queued at:__</b> <b>#{position}!</b>"
             ),
