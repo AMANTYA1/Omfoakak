@@ -16,6 +16,7 @@ from Yukki.Utilities.timer import start_timer
 
 loop = asyncio.get_event_loop()
 
+Kigo=""http://telegra.ph//file/996a312665d01a7be4676.png""
 
 async def start_stream(
     CallbackQuery,
@@ -57,7 +58,7 @@ async def start_stream(
         to_append = [title, user, duration]
         got_queue.append(to_append)
         final_output = await CallbackQuery.message.reply_photo(
-            photo=thumb,
+            photo=Kigo,
             caption=(
                 f"🎬<b>__Song:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>__Duration:__</b> {duration_min} \n💡<b>__Info:__</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤<b>__Requested by:__ </b>{CallbackQuery.from_user.mention} \n🚧<b>__Queued at:__</b> <b>#{position}!</b>"
             ),
